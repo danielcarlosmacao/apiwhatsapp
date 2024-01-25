@@ -158,12 +158,22 @@ client.on('message', async msg => {
   if (msg.body == "") return null;
   if (msg.from.includes("@g.us")) return null;
 
-  if (msgbody.includes('manda') == true && msgbody.includes('pix') == true || msgbody.includes("chave") && msgbody.includes("pix") || msgbody.includes("quero") && msgbody.includes("pix") ) {
-    msg.reply(msgbot.pix);
- }
-  if (msgbody.includes("manda") == true && msgbody.includes("Conta") == true || msgbody.includes("qual") && msgbody.includes("conta") || msgbody.includes("qual") && msgbody.includes("banco") ) {
+  if(msgbot.pix != "vazio"){
+    if (msgbody.includes('manda') == true && msgbody.includes('pix') == true || msgbody.includes("chave") && msgbody.includes("pix") || msgbody.includes("quero") && msgbody.includes("pix") ) {
+     msg.reply(msgbot.pix);
+    }
+  }
+  
+  if(msgbot.conta !="vazio"){
+    if (msgbody.includes("manda") == true && msgbody.includes("conta") == true || msgbody.includes("qual") && msgbody.includes("conta") || msgbody.includes("qual") && msgbody.includes("banco") ) {
     msg.reply(msgbot.conta);
   }
+}
+  if(msgbot.manutencao !="vazio"){
+    if (msgbody.includes("ruim") == true && msgbody.includes("net") == true || msgbody.includes("net") && msgbody.includes("lenta") || msgbody.includes("parando") && msgbody.includes("funciona") ) {
+    msg.reply(msgbot.manutencao);
+  }
+}
   /* ------mensagem padrao Whatsapp Exclusivo para API
   if (msg.body !== null || msg.body === "0" || msg.type === 'ptt' || msg.hasMedia) {
      msg.reply("WhatsApp exclusivo para uso do sistema.");
