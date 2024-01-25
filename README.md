@@ -15,6 +15,12 @@ https://github.com/MKCodec
 ```sh
 sudo wget https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/mwsm.js -O /var/api/whatsapp/mwsm.js
 ```
+atualiza msgbot.js caso tenha personalizado sera perdido
+
+```sh
+sudo wget https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/msgbot.js -O /var/api/whatsapp/msgbot.js
+```
+
 ### Instalação em CT Linux Exclusivo via ProxMox
 
 1 - Atualize seu sistema
