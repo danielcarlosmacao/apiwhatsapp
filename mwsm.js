@@ -165,7 +165,9 @@ Object.values(msgbot).forEach((messageconfig) => {
   const haskeyword = messageconfig.keywords.some((keys) =>
    keys.every((word) => msgbody.includes(word))
   );
-  if (!haskeyword) return
+  if (!haskeyword) return;
+
+  if(messageconfig.message == false) return;
 
   msg.reply(messageconfig.message);
 });

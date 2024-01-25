@@ -4,6 +4,11 @@ message: a mensagem que sera enviado automaticamente.
 keywords: o texto que sera reconhecido para envio automatico.
 */
 module.exports = {
+    naopix: {
+        active: false,
+        message: false,
+        keywords: [['problema','pix'],['fiz','pix'],['feito','pix']]
+    },
     pix: {
         active: false,
         message:'segue o pix: xxxx.xxx.xx',
