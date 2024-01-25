@@ -10,7 +10,8 @@ https://github.com/MKCodec
 * Servidor Linux CT ProxMox ou Direto no MkAuth
   
 ### Atualização da API 
-
+ 
+ obs: Revizar o arquivo msgbot.js se a mudanças, pois o arquivo nao sera atualizado.
 ```sh
 sudo wget https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/mwsm.js -O /var/api/whatsapp/mwsm.js
 ```
