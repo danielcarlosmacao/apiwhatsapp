@@ -12,7 +12,7 @@ https://github.com/MKCodec
 ### Atualização da API 
 
 ```sh
-sudo wget https://raw.githubusercontent.com/danielcarlosmacao/apiwhats/main/mwsm.js -O /var/api/whatsapp/mwsm.js
+sudo wget https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/mwsm.js -O /var/api/whatsapp/mwsm.js
 ```
 ### Instalação em CT Linux Exclusivo via ProxMox
 
@@ -57,7 +57,7 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && apt-get ins
 
 4 - Instale o Mwsm
 ```sh
-git clone https://github.com/danielcarlosmacao/apiwhats.git /var/api/whatsapp && cd /var/api/whatsapp
+git clone https://github.com/danielcarlosmacao/apiwhatsapp.git /var/api/whatsapp && cd /var/api/whatsapp
 ```
 5 - Instale o npm
 ```sh
@@ -97,7 +97,7 @@ sudo mkdir -p /var/api/whatsapp
 
 5 - Instale o Mwsm
 ```sh
-sudo git clone https://github.com/danielcarlosmacao/apiwhats.git /var/api/whatsapp && cd /var/api/whatsapp
+sudo git clone https://github.com/danielcarlosmacao/apiwhatsapp.git /var/api/whatsapp && cd /var/api/whatsapp
 ```
 6 - Instale o npm
 ```sh
@@ -112,7 +112,7 @@ sudo npm install pm2 -g && pm2 start mwsm.js --name Bot-Mwsm --watch && pm2 save
 
 ### Configurando o Servidor
 1 - Acesse seu servidor web através do IP:8000
-[![Node](https://raw.githubusercontent.com/danielcarlosmacao/apiwhats/main/node.png)](#)
+[![Node](https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/node.png)](#)
 
 2 - Aguarde a geração do QRCode
 
@@ -123,7 +123,7 @@ sudo npm install pm2 -g && pm2 start mwsm.js --name Bot-Mwsm --watch && pm2 save
 4 - Configure seu servidor no MKAuth seguindo as instruções do servidor Web
 
 ** `Opções > Servidor de SMS > Servidor`
-[![MkAuth](https://raw.githubusercontent.com/danielcarlosmacao/apiwhats/main/mkauth.png)](#)
+[![MkAuth](https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/mkauth.png)](#)
 
 ### Comandos
 Quebra de Balão -> `\n` ou `##`
