@@ -1,14 +1,18 @@
-
+/*
+Active:  status da automação true para ativo false para desativado
+message: a mensagem que sera enviado automaticamente.
+keywords: o texto que sera reconhecido para envio automatico.
+*/
 module.exports = {
     pix: {
-        active: true,
-        message:'segue o pix: ',
-        keywords: [['manda','pix'],['chave','pix']]
+        active: false,
+        message:'segue o pix: xxxx.xxx.xx',
+        keywords: [['manda','pix'],['chave','pix'],['qual','pix']]
     },
     conta: {
-        active: true,
-        message:'segue a conta: ',
-        keywords: [['manda','conta'],['qual','conta'],['qual','banco']]
+        active: false,
+        message:'segue a conta: xxxx.xx-x ',
+        keywords: [['manda','conta'],['qual','conta'],['qual','banco'],['posso','transferi']]
     },
     manutencao: {
         active: false,
