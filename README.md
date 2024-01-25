@@ -15,7 +15,7 @@ https://github.com/MKCodec
 ```sh
 sudo wget https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/mwsm.js -O /var/api/whatsapp/mwsm.js
 ```
-atualiza msgbot.js caso tenha personalizado sera perdido
+atualiza msgbot.js caso ja tenha personalizado sera perdido. verificar apos atualizar.
 
 ```sh
 sudo wget https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/msgbot.js -O /var/api/whatsapp/msgbot.js
@@ -119,7 +119,8 @@ sudo npm install pm2 -g && pm2 start mwsm.js --name Bot-Mwsm --watch && pm2 save
 
 ### Configurando o Servidor
 1 - Acesse seu servidor web através do IP:8000
-[![Node](https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/node.png)](#)
+
+[![Node](https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/midia/git/node.png)](#)
 
 2 - Aguarde a geração do QRCode
 
@@ -130,7 +131,7 @@ sudo npm install pm2 -g && pm2 start mwsm.js --name Bot-Mwsm --watch && pm2 save
 4 - Configure seu servidor no MKAuth seguindo as instruções do servidor Web
 
 ** `Opções > Servidor de SMS > Servidor`
-[![MkAuth](https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/mkauth.png)](#)
+[![MkAuth](https://raw.githubusercontent.com/danielcarlosmacao/apiwhatsapp/main/midia/git/mkauth.png)](#)
 
 ### Comandos
 Quebra de Balão -> `\n` ou `##`
