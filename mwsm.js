@@ -14,6 +14,7 @@ const io = socketIO(server);
 require('events').EventEmitter.defaultMaxListeners = Infinity; 
 
 const msgbot = require('./msgbot');
+const { exit } = require('process');
 
 function delay(t, v) {
   return new Promise(function(resolve) { 
@@ -167,7 +168,7 @@ Object.values(msgbot).forEach((messageconfig) => {
   );
   if (!haskeyword) return;
 
-  if(messageconfig.message == false) return;
+  if(messageconfig.message == false) exit;
 
   msg.reply(messageconfig.message);
 });

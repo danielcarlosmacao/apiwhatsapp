@@ -1,6 +1,6 @@
 /*
 Active:  status da automação true para ativo false para desativado
-message: a mensagem que sera enviado automaticamente.
+message: a mensagem que sera enviado automaticamente se mensagem estiver com valor false API nao enviara a mensagem.
 keywords: o texto que sera reconhecido para envio automatico.
 */
 module.exports = {
